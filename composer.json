@@ -1,0 +1,23 @@
+{
+    "name": "evandroas01/Receiv",
+    "description": "Projeto de cadastro de dividas e devedores",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "authors": [{
+        "name": "Evandro Silva",
+        "email": "evandroaugusto83@gmail.com",
+        "role": "Developer"
+    }],
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+    "require": {
+        "ext-json": "*",
+        "coffeecode/router": "1.0.7"
+    }
+}
