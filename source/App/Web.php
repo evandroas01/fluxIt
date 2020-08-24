@@ -73,7 +73,7 @@ class Web
     {
 
         $model = new \Source\Models\Info();
-        $list20 = $model->allLimit20("0060");
+        $list20 = $model->allLimit20($_GET['cod']);
 
         foreach ($list20 as $k => $v) {
             $info[] =[
@@ -89,7 +89,7 @@ class Web
     {
 
         $model = new \Source\Models\Info();
-        $list = $model->all("0090");
+        $list = $model->all($_GET['cod']);
 
         foreach ($list as $k => $v) {
             $info[] =[

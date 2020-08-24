@@ -9,6 +9,10 @@ $router = new Router(URL_BASE);
 //Controllers
 $router->namespace("Source\App");
 
+$router->group(null);
+$router->get("/","Web:insert");
+$router->post("/","Web:insert");
+$router->get("/{filter}", "Web:insert");
 
 //insert
 $router->group("insert");
